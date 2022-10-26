@@ -1,2 +1,2 @@
 # meemz
-Python/Imagemagick based meme generator.
+Python/Pillow based meme generator.
