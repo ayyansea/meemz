@@ -1,4 +1,15 @@
-color: 
+colors: 
   - light: "#FFFFFF"
   - dark: "#000000"
 font: "Roboto"
+components:
+  top:
+    width: 100
+    height: 20
+  body:
+    width: 100
+    height: 40
+    font: "Iosevka"
+  image:
+    width: 100
+    height: 40

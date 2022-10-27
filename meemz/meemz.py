@@ -1,4 +1,5 @@
 import argparse
+from config import Config
 
 parser = argparse.ArgumentParser(description='meemz options')
 
@@ -16,6 +17,9 @@ def main():
         default: 1100,1100
     @arg -D / --deep-fry: apply deep-frying to the resulting image
         default: none (false)
+    @arg -J / --jpeg: has nothing to do with file format, just
+                      makes the meme look very poor
+        default: none (false)
     @arg -i / --image: specify source image (absolute/relative path)
         default: none
     @arg -o / --output: specify output file (absolute/relative path)
@@ -31,5 +35,11 @@ def main():
     """
     pass
 
+
+def calculate_canvas(config):
+    pass
+
+
 if __name__ == "__main__":
-    main()
+    config = Config("twitter")
+    calculate_canvas(config)
