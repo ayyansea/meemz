@@ -20,6 +20,7 @@ Main config components:
         @height [num]: %
         @font   [str]
         @align  [str]: right, left, center
+        @color  [str]
 
 Font size is calculated automatically.
 """
@@ -65,6 +66,13 @@ class Component:
             return self.__props["align"]
         except KeyError:
             return "center"
+
+    
+    def get_local_color(self) -> str:
+        try:
+            return self.__props["color"]
+        except KeyError:
+            return "#FFFFFF"
         
 
 class Config:

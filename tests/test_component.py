@@ -3,9 +3,9 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 import unittest
-from config import Component
+from meemz.config import Component
 
-class TestParse(unittest.TestCase):
+class TestComponent(unittest.TestCase):
     """
     Tests:
     * check return type of get_config()

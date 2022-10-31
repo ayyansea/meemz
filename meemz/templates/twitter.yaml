@@ -1,6 +1,6 @@
 colors: 
   - light: "#FFFFFF"
-  - dark: "#000000"
+  - dark: "#1f2734"
 font: "Roboto"
 components:
   top:
@@ -8,8 +8,10 @@ components:
     height: 20
   body:
     width: 100
-    height: 40
+    height: 20
     font: "Iosevka"
+    color: "#AAAAAA"
   image:
     width: 100
-    height: 40
+    height: 60
+    color: "#CCCCCC"

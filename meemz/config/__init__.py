@@ -1,1 +1,1 @@
-from config.config import Config, Component
+from .config import Config, Component

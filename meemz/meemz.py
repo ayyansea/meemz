@@ -1,5 +1,6 @@
 import argparse
 from config import Config
+from generator import Generator
 
 parser = argparse.ArgumentParser(description='meemz options')
 
@@ -33,13 +34,12 @@ def main():
 
     ...more to come?
     """
-    pass
 
+    conf = Config("twitter")
+    gen = Generator(conf)
 
-def calculate_canvas(config):
-    pass
+    gen.save_canvas()
 
 
 if __name__ == "__main__":
-    config = Config("twitter")
-    calculate_canvas(config)
+    main()
